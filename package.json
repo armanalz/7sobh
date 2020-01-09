@@ -1,5 +1,6 @@
 {
   "name": "7sobh",
+  "homepage": "https://armanalz.github.io/7sobh",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
+    "watch:sass": "sass --watch src/resources/styles/style.scss:src/resources/styles/style.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
