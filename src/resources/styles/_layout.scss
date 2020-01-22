@@ -1,0 +1,10 @@
+.layout_wrapper{
+    margin: 0 auto;
+    max-width: 100rem;
+
+
+    @include respond(tab-port) {
+        max-width: 75rem;
+     }
+    
+}

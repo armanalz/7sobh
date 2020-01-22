@@ -1,0 +1,202 @@
+.footer_wrapper { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 1.5rem;
+    background: #fff;
+    margin: 0 0 2rem 0;
+
+}
+
+.footer_container {
+
+    border: 1rem solid #ddd;
+    padding: 1rem;
+    width: 100%;
+}
+
+.footer_search {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 50%;
+    margin: 1.5rem auto;
+
+    @include respond(phone) {
+
+        width: 80%;
+
+    }
+    
+    @include respond(xsmall) {
+
+        width: 100%;
+     
+    }
+
+    &-icon { 
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right:  1px solid #ddd;
+        padding: .3rem;
+        height: 3rem;
+        width: 3rem;
+
+    }
+
+    &-input {
+
+       -webkit-appearance: none;
+       border: none;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: right;
+       padding: .3rem;
+       font-family: "yekan";
+       text-decoration: none;
+       color: #555;
+       font-size: 1.2rem;
+       width: 100%;
+       height: 3rem;
+       border: none;
+       outline: none;
+
+    }
+}
+
+.quick_access {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+
+    &-link { 
+
+        display: none;
+        font-family: "yekan";
+        font-size: 1.8rem;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(15, 78, 149);
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgb(15, 78, 149);
+
+        @include respond(phone) {
+
+            display: block;
+        }
+    }
+
+  
+}
+
+.footer_menu { 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;  
+  
+    &-list {
+
+      list-style-type: square;
+      list-style-position: initial;
+      justify-content: center;
+      align-items: center;
+
+      @include respond(phone) {
+
+        display:flex;
+        flex-direction: column-reverse;
+        list-style: square;
+        list-style-position: outside;
+        text-align: center
+    }
+     
+      
+  
+      &-item {
+
+          display: inline;
+          list-style: square;
+
+          @include respond(phone) {
+
+               margin: 1rem 0;
+          }
+          
+ 
+          &-link {
+
+              font-family: "yekan";
+              text-decoration: none;
+              color: #666;
+              font-size: 1.4rem;
+          }
+      }
+  
+      &-item:not(:last-child):after {
+
+          content: '\25A0 ';
+          color:rgb(217, 113, 9);
+          font-size:.6rem;
+          margin: 0 .3rem;
+      }
+
+      @include respond(phone) {
+
+        &-item:not(:first-child):after {
+            content: '\25A0 ';
+            color:rgb(217, 113, 9);
+            font-size:.6rem;
+            margin: 0 .3rem;
+        }
+         
+      }
+      
+    }
+}
+
+  .footer_copyright { 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "yekan";
+    text-decoration: none;
+    color: #666;
+    font-size: 1.2rem;
+    direction: rtl;
+    padding: 1rem 0 2.5rem 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+
+  }
+
+  .footer_developer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "yekan";
+    text-decoration: none;
+    color: #666;
+    font-size: 1.2rem;
+    direction: rtl;
+    padding: 1.5rem 0;
+
+  }
+

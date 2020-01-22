@@ -1,0 +1,465 @@
+
+.header_wrapper {
+
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.header_top-image {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1.2rem 0 2rem 0;
+    
+
+
+    &-photo {  
+
+        margin: 0 auto;
+        
+    }
+
+    @include respond(phone) {
+
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        display: none;
+    }
+    
+}
+
+.header_content-container { 
+
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: 1fr;
+    padding: .8rem 1.3rem;
+
+    @include respond(phone) {
+        padding:  0;
+    }
+}
+
+.search_tools {
+
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    grid-column-gap: 1rem;
+    background-color: rgb(232, 232, 232);
+    
+    @include respond(phone) {
+
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        
+    }
+}
+
+.search_stuff {
+
+    display: flex;  
+    margin: 0 1rem 0 0;   
+}
+
+.search_icon {
+
+    background-color: rgb(246, 139, 31);
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    @include respond(phone) {
+
+        width: 4rem;
+        height: 4rem;
+        
+    }
+    
+}
+
+.search_input {
+
+    -webkit-appearance: none;
+    direction:"rtl"!important;
+    font-family: "yekan";
+    font-size: 1.2rem;
+    border: none;
+    height: 3rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1rem;
+    
+    &:focus {
+
+        outline: none;
+        box-shadow: none;
+    }
+
+    @include respond(phone) {
+
+        padding: 0 1rem 0 15rem;
+        height: 4rem;
+        
+    }
+
+    @include respond(xsmall) {
+
+        padding: 0 1rem 0 5rem;
+    }
+   
+}
+
+.android {
+
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: .7rem;
+    
+    @include respond(phone) {
+
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        display: none;
+    }
+    
+}
+
+.ios {
+
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: .7rem;
+
+    @include respond(phone) {
+
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        display: none;
+    }
+}
+
+.apps_container {
+     
+     display: none;
+   
+
+   @include respond(phone) {
+
+        margin: 2rem auto; 
+        display: flex; 
+    
+   }
+
+}
+
+.android_bottom {
+
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: .7rem;
+      
+}
+
+.ios_bottom {
+
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: .7rem;
+  
+   
+}
+
+.header_menu {
+
+  direction: rtl;
+
+  @include respond(phone) {
+
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        display: none;
+
+  }
+
+
+  &-list {
+
+    list-style-type: square;
+    list-style-position: initial;
+    
+
+    &-item {
+
+        display: inline;
+        list-style: square;
+
+        &-link {
+
+            font-family: "yekan";
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            line-height: 3rem;
+        }
+    }
+
+    &-item:not(:last-child):after {
+
+        content: '\25A0 ';
+        color:rgb(70, 130, 180);;
+        font-size:.6rem;
+        margin: 0 .3rem;
+    }
+    
+  }
+}
+
+.header_logo {
+
+    height: 10rem;
+    background-color: #025594;
+    margin:.8rem 0 2rem 0;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  
+    @include respond(phone) {
+
+        height: 6rem;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    &-link {
+
+        background: url(../images/logo.png) no-repeat 53%;
+        background-size: contain;
+        display: inline-block;
+        height: 12.2rem;
+        margin: 0 auto;
+        width: 100%;
+          
+        @include respond(phone) {
+
+            height: 3rem;
+            margin: 0 1rem 0 0;
+            width: 15rem;
+        }
+        
+    }
+}
+
+.IconButton_wrapper {
+
+    display: none;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    position: relative;
+
+
+    @include respond(phone) {
+        display: block;
+    }
+}
+
+.IconButton {
+   
+   margin: auto;
+  
+}
+
+.menue__icon {
+
+    margin: auto;
+    height: .2rem;
+    width: 2.2rem;
+    background: #fff;
+    margin: auto;
+    position: absolute;
+    right:0;
+    transition: all .4s;
+}
+
+.nav_container {
+
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    background: #4682b4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+   
+    @include respond(phone) {
+
+       height: 0;
+       overflow: hidden;
+    }
+    
+}
+
+.header_nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+    @include respond(phone) {
+
+        width: 100%
+    }
+    
+    
+    
+    &-list {
+
+        direction: rtl;
+
+        @include respond(phone) {
+            width: 100%
+        }
+
+        &-item {
+
+            display: inline-block;
+            list-style: none;
+            color: white;
+            margin-left:  .1rem;
+            text-align: center;
+            line-height: 2.5;
+            text-decoration: none;
+
+            @include respond(phone) {
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin: 0;
+                
+               
+            }
+            
+
+            &-link {
+
+                font-family: "yekan";
+                text-decoration: none;
+                font-size: 1.4rem;
+                color: white;
+                text-align: center;
+                padding: 0 1.6rem;
+
+                @include respond(tab-port) {
+
+                    padding: 0 .5rem;
+                    letter-spacing: -.5px;
+                }
+
+                @include respond(phone) {
+
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 1.6rem 0 0;
+                    text-align: right;
+                    letter-spacing: 0;
+                   
+                }
+            }
+           
+        }
+
+        &-item:hover {
+                
+            background: rgb(246, 139, 31) 200%;
+            background-size: contain;
+        }
+
+       
+
+    }
+}
+
+.first_page {
+
+    @include respond(phone) {
+        width: 100%;
+    }
+
+    &-link {
+
+        font-family: "yekan";
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: white;
+        line-height: 2.5;
+        padding: 0 1.6rem;
+        display: inline-block;
+
+        @include respond(phone) {
+
+            width: 100%;
+        }
+    }
+
+    &-link:hover {
+
+        background-color: rgb(246, 139, 31);
+             
+    }
+}
+
+.active {
+
+    background: rgb(246, 139, 31) 400%;
+    display: inline-block;
+    margin: 0;
+      
+}
+
+
+
+
