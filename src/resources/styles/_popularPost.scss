@@ -1,0 +1,163 @@
+.popost_wrapper {
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 1rem 0;
+
+    @include respond(phone) {
+
+      justify-content: flex-end;
+    
+    } 
+
+    @include respond(xsmall) {
+    
+      padding: 1rem 1rem 1rem 0;
+    } 
+   
+}
+
+.popost_content {
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 1rem 1.3rem 1rem 0;
+   
+}
+
+.popost_title {
+    
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    text-align: right;
+    font-weight: 700;
+    color: $color-gray-light;
+    letter-spacing: -1px;
+}
+
+.popost_date { 
+
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0;
+
+    &-photo {
+
+        padding-left: .4rem;
+    }
+
+    &-text { 
+
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: $color-gray-dark;
+    }
+}
+
+.popost_views {
+
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    padding: .5rem 0 0 0;
+
+    &-photo {
+
+        padding-left: .4rem;
+    }
+
+    &-text { 
+        
+        font-size: 1.2rem;
+        line-height: 1.6;
+        letter-spacing: -.7px;
+        color: $color-gray-dark;
+    }
+}
+
+.popost_photo-wrapper {
+
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    padding: 1rem 0 0 0 ;
+    
+} 
+
+.popost_photo {
+
+  height: 5rem;
+  width: 90%;
+  
+
+  @include respond(phone) {
+
+    height: 10rem;
+    width: 85%;
+
+  } 
+
+  @include respond(xsmall) {
+
+    height: 5rem;
+    width: 90%;
+
+  } 
+
+}
+
+
+.tab_list {
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    list-style: none;
+    direction: rtl;       
+    border-bottom: 1px solid $border-color-dark;
+    
+
+
+    &-item {
+        
+        font-size: 1.4rem;
+        color: $color-gray-dark;
+        position: relative;
+        padding: 1.5rem 0;
+        
+        
+    }
+
+    &-item:hover {
+
+        color: $color-yellow-dark;
+        cursor: pointer;
+    }
+
+ 
+}
+
+.active_tab {
+
+    position: relative;
+
+}
+
+.active_tab::before {
+
+   content: "";
+   width: 1.2rem;
+   height: 1.2rem;
+   position: absolute;
+   transform: rotate(45deg);
+   top:4.5rem;
+   left: 1.3rem;
+   border-right: 1px solid $border-color-dark;
+   border-bottom: 1px solid $border-color-dark;
+   background: $color-white;
+
+}

@@ -1,0 +1,279 @@
+.ads__wrapper{ 
+
+    margin:0 1.5rem;
+   
+    @include respond(tab-port) {
+
+        height: 0;
+        width: 0;
+        overflow: hidden;
+    }
+}
+
+.newspaper_ads {
+   
+    margin: 1rem 0 0 0;
+
+    &-link {
+
+        border: 1px solid $border-color-dark;
+        padding: 5rem 0 1.1rem 0;
+        z-index: 100;
+        text-decoration: none;
+        background: $color-white;
+        display: table;
+        margin: 0 1.6rem;
+        
+    }
+     
+    &-title {
+
+       text-align: center;
+       background: $newspaper-title;
+       font-size: 1.4rem;
+       color: $color-white;
+       font-weight: 400;
+       padding: .9rem 0;
+       margin:0 0 -5rem 0 ;
+       position: relative;
+    }
+
+    &-title::before {
+
+        content: "";
+        position: absolute;
+        top: 3.5rem;
+        background: $newspaper-title-sudo;
+        height: 1.6rem;
+        width: 1.6rem;
+        left: 0;
+        clip-path: polygon(0 0,16px 0,16px 16px) ;
+
+    }
+
+    &-title::after {
+
+        content: "";
+        position: absolute;
+        top: 3.5rem;
+        background: $newspaper-title-sudo;
+        height: 1.6rem;
+        width: 1.6rem;
+        right: 0;
+        clip-path: polygon(0 0,16px 0,0 16px) ;
+
+    }
+
+    &-photo {
+
+      width: 100%;
+      z-index: 10;
+
+    }
+
+    &-text {
+        
+        font-size: 1.4rem;
+        color: $color-gray;
+        text-align: center;
+        padding: .7rem 0; 
+        text-decoration: none;
+        
+    }
+}
+
+.ads_banner {
+
+   padding: 2rem 0 1.5rem 0;
+   margin: 0;
+
+    &-photo {
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+.ads_image-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+
+}
+
+.ads_image {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5,1fr);
+    grid-row-gap: 1.5rem;
+    border: 1px solid $border-color-dark;
+    padding: 1.5rem 0;
+    margin: 0 ;
+
+    &-title {
+        
+        color: $color-gray-lighter;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        direction: rtl;
+        font-size: 1.8rem;
+        font-weight: 400;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+
+    }
+}
+
+.facebook {
+
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $facebook-bg;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.twitter {
+    
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $twitter-bg;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.instagram {
+    
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $instagram-bg;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.youtube {
+
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $border-color;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.siterss { 
+    
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $color-yellow-dark;
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.registration {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $registration-bg;
+    border: 1px solid $border-color-dark;
+    margin: 1rem 0;
+    padding: 1.5rem 2rem;
+
+    &-title { 
+        
+        color: $color-gray-lighter;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: rtl;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    &-content {
+
+       display: flex;
+       border: 1px solid $border-color;
+       background: $color-white;
+       overflow: hidden;
+       width: 92%;
+     
+    }
+
+    &-btn {
+
+        color:$color-white;
+        background: $color-yellow-dark;
+        direction: rtl;
+        font-size: 1.4rem;
+        border: none;
+        padding: .8rem 2rem;
+        margin: 3px;       
+
+    }
+
+    &-input {
+
+        border: none;
+        text-align: right;
+        font-size: 1.4rem;
+        color: $color-gray-lighter;
+        padding: .8rem .5rem;
+        overflow: hidden;
+        direction: rtl;
+        letter-spacing: -1px;
+    }
+}
+
+.app_banner {
+
+    padding: 1rem 0 1.5rem 0;
+    margin: 0;
+ 
+     &-photo {
+
+         width: 100%;
+         margin: 0;
+         padding: 0;
+
+     }
+ }
