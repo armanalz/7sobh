@@ -33,13 +33,14 @@
 
 .header_content-container { 
 
-    background-color: white;
+    background-color: $color-white;
     display: grid;
     grid-template-rows: repeat(3,auto);
     grid-template-columns: 1fr;
     padding: .8rem 1.3rem;
 
     @include respond(phone) {
+
         padding:  0;
     }
 }
@@ -55,7 +56,7 @@
     position: relative;
     padding: .5rem;
     grid-column-gap: 1rem;
-    background-color: rgb(232, 232, 232);
+    background-color: $search-tools-bg;
     
     @include respond(phone) {
 
@@ -76,7 +77,7 @@
 
 .search_icon {
 
-    background-color: rgb(246, 139, 31);
+    background-color: $color-yellow;
     height: 3rem;
     width: 3rem;
     justify-content: center;
@@ -98,7 +99,6 @@
 
     -webkit-appearance: none;
     direction:"rtl"!important;
-    font-family: "yekan";
     font-size: 1.2rem;
     border: none;
     height: 3rem;
@@ -130,7 +130,7 @@
 
     height: 3rem;
     width: 3rem;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 3px;
     justify-content: center;
     align-items: center;
@@ -151,7 +151,7 @@
 
     height: 3rem;
     width: 3rem;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 3px;
     justify-content: center;
     align-items: center;
@@ -185,7 +185,7 @@
 
     height: 3rem;
     width: 3rem;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 3px;
     justify-content: center;
     align-items: center;
@@ -198,7 +198,7 @@
 
     height: 3rem;
     width: 3rem;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 3px;
     justify-content: center;
     align-items: center;
@@ -235,9 +235,8 @@
 
         &-link {
 
-            font-family: "yekan";
             text-decoration: none;
-            color: black;
+            color: $color-black;
             font-size: 1.2rem;
             line-height: 3rem;
         }
@@ -246,7 +245,7 @@
     &-item:not(:last-child):after {
 
         content: '\25A0 ';
-        color:rgb(70, 130, 180);;
+        color: $color-blue;
         font-size:.6rem;
         margin: 0 .3rem;
     }
@@ -257,7 +256,7 @@
 .header_logo {
 
     height: 10rem;
-    background-color: #025594;
+    background-color: $header-logo-bg;
     margin:.8rem 0 2rem 0;
     grid-row: 2/3;
     grid-column: 1/-1;
@@ -301,6 +300,7 @@
 
 
     @include respond(phone) {
+
         display: block;
     }
 }
@@ -316,7 +316,7 @@
     margin: auto;
     height: .2rem;
     width: 2.2rem;
-    background: #fff;
+    background: $color-white;
     margin: auto;
     position: absolute;
     right:0;
@@ -327,7 +327,7 @@
 
     grid-row: 3/4;
     grid-column: 1/-1;
-    background: #4682b4;
+    background: $nav-container-bg;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -367,7 +367,7 @@
 
             display: inline-block;
             list-style: none;
-            color: white;
+            color: $color-white;
             margin-left:  .1rem;
             text-align: center;
             line-height: 2.5;
@@ -386,10 +386,9 @@
 
             &-link {
 
-                font-family: "yekan";
                 text-decoration: none;
                 font-size: 1.4rem;
-                color: white;
+                color: $color-white;
                 text-align: center;
                 padding: 0 1.6rem;
 
@@ -414,7 +413,7 @@
 
         &-item:hover {
                 
-            background: rgb(246, 139, 31) 200%;
+            background: $color-yellow 200%;
             background-size: contain;
         }
 
@@ -431,10 +430,9 @@
 
     &-link {
 
-        font-family: "yekan";
         text-decoration: none;
         font-size: 1.4rem;
-        color: white;
+        color: $color-white;
         line-height: 2.5;
         padding: 0 1.6rem;
         display: inline-block;
@@ -447,14 +445,14 @@
 
     &-link:hover {
 
-        background-color: rgb(246, 139, 31);
+        background-color: $color-yellow;
              
     }
 }
 
 .active {
 
-    background: rgb(246, 139, 31) 400%;
+    background: $color-yellow 400%;
     display: inline-block;
     margin: 0;
       

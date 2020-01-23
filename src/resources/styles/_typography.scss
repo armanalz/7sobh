@@ -1,0 +1,39 @@
+@font-face {
+
+        font-family: 'yekan';
+        src: url('../fonts/yekan-regular.eot');
+        src: url('../fonts/yekan-regular.eot?#iefix') format('FontName-opentype'),
+            url('../fonts/yekan-regular.woff') format('woff'),
+            url('../fonts/yekan-regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+/*
+
+  FONTS
+
+*/
+
+$primary-font: 'yekan';
+
+
+/*
+
+  COLORS
+
+*/
+
+$bg-color: #d5d5d5;
+$color-white: #FEFEFE;
+$search-tools-bg: #e8e8e8;
+$color-yellow:  #f68b1f;
+$color-black: #222222;
+$color-blue: #4682b4;
+$header-logo-bg: #025594;
+$nav-container-bg: #4682b4;
+$border-color: #DDDDDD;
+$color-gray: #555555;
+$color-gray-dark: #666666;
+$footer-link: #0f4e95;
+$color-yellow-dark: #d97109;

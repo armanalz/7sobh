@@ -5,14 +5,14 @@
     justify-content: center;
     align-items: center;
     padding:2rem 1.5rem;
-    background: #fff;
+    background: $color-white;
     margin: 0 0 2rem 0;
 
 }
 
 .footer_container {
 
-    border: 1rem solid #ddd;
+    border: 1rem solid $border-color;
     padding: 1rem;
     width: 100%;
 }
@@ -23,7 +23,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    border: 1px solid #ddd;
+    border: 1px solid $border-color;
     width: 50%;
     margin: 1.5rem auto;
 
@@ -44,7 +44,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-right:  1px solid #ddd;
+        border-right:  1px solid $border-color;
         padding: .3rem;
         height: 3rem;
         width: 3rem;
@@ -60,9 +60,8 @@
        align-items: center;
        text-align: right;
        padding: .3rem;
-       font-family: "yekan";
        text-decoration: none;
-       color: #555;
+       color: $color-gray;
        font-size: 1.2rem;
        width: 100%;
        height: 3rem;
@@ -83,13 +82,12 @@
     &-link { 
 
         display: none;
-        font-family: "yekan";
         font-size: 1.8rem;
         text-align: center;
         text-decoration: none;
-        color: rgb(15, 78, 149);
+        color: $footer-link;
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgb(15, 78, 149);
+        border-bottom: 1px solid $footer-link;
 
         @include respond(phone) {
 
@@ -139,9 +137,8 @@
  
           &-link {
 
-              font-family: "yekan";
               text-decoration: none;
-              color: #666;
+              color: $color-gray-dark;
               font-size: 1.4rem;
           }
       }
@@ -149,7 +146,7 @@
       &-item:not(:last-child):after {
 
           content: '\25A0 ';
-          color:rgb(217, 113, 9);
+          color: $color-yellow-dark;
           font-size:.6rem;
           margin: 0 .3rem;
       }
@@ -158,7 +155,7 @@
 
         &-item:not(:first-child):after {
             content: '\25A0 ';
-            color:rgb(217, 113, 9);
+            color: $color-yellow-dark;
             font-size:.6rem;
             margin: 0 .3rem;
         }
@@ -174,13 +171,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: "yekan";
     text-decoration: none;
-    color: #666;
+    color: $color-gray-dark;
     font-size: 1.2rem;
     direction: rtl;
     padding: 1rem 0 2.5rem 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border-color;
     text-align: center;
 
   }
@@ -191,9 +187,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: "yekan";
     text-decoration: none;
-    color: #666;
+    color: $color-gray-dark;
     font-size: 1.2rem;
     direction: rtl;
     padding: 1.5rem 0;

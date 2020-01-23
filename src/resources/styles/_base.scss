@@ -24,7 +24,8 @@ body {
     padding: 0;
     -webkit-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
-    background:rgb(213, 213, 213);
+    background:$bg-color;
+    font-family: $primary-font;
     
 }
 
