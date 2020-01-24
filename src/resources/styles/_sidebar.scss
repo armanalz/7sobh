@@ -205,6 +205,32 @@
     align-items: center;
 }
 
+.pinterest { 
+    
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $border-color;
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.google-plus { 
+    
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3px;
+    background: $political-bg;
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 .registration {
 
     display: flex;

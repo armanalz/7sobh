@@ -217,10 +217,10 @@ class Header extends Component {
                         </div>
                         <div className="apps_container">
                                 <div className="android_bottom">
-                                        <Icon name="android" />
+                                        <Icon name="android" id="menu-android" />
                                 </div>
                                 <div className="ios_bottom">
-                                        <Icon name="appleinc" /> 
+                                        <Icon name="appleinc" id="menu-appleinc"/> 
                                 </div>
                         </div>
 
