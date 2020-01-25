@@ -1,7 +1,7 @@
 {
   "name": "7sobh",
-  "homepage": "https://armanalz.github.io/7sobh",
   "version": "0.1.0",
+  "homepage": "https://armanalz.github.io/7sobh/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -9,8 +9,6 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "react-scripts": "3.3.0"
   },
   "scripts": {
@@ -18,6 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "react-router-dom": "^5.1.2",
     "react-tabs": "^3.1.0"
   }
